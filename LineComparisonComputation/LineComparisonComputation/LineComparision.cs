@@ -44,10 +44,10 @@ namespace LineComparisonComputation
             R_Two = Convert.ToInt32(Console.ReadLine());
 
             //Calculating value of XY
-             LengthOfXY = Math.Sqrt(Math.Pow((X_One - X_Two), 2) + Math.Pow((Y_Two - Y_One), 2));
+            LengthOfXY = Math.Sqrt(Math.Pow((X_One - X_Two), 2) + Math.Pow((Y_Two - Y_One), 2));
             Console.WriteLine("Length of Value 1 is:: " + LengthOfXY);
             //Calculating value of SR
-             LengthOfSR = Math.Sqrt(Math.Pow((S_Two - S_One), 2) + Math.Pow((R_Two - R_One), 2));
+            LengthOfSR = Math.Sqrt(Math.Pow((S_Two - S_One), 2) + Math.Pow((R_Two - R_One), 2));
             Console.WriteLine("Length of Value 2 is: " + LengthOfSR);
 
         }
@@ -61,5 +61,17 @@ namespace LineComparisonComputation
                 Console.WriteLine("Therefore, Lines LengthOfXY and LengthOfSR are Equal.");
             Console.ReadKey();
         }
+        public void functionCompare()
+        {
+            double Differene = LengthOfXY.CompareTo(LengthOfSR);
+            if (Differene < 0)
+                Console.WriteLine("Length of Line LengthOfXY is less than LengthOfSR.");
+            if (Differene > 0)
+                Console.WriteLine("Length of Line LengthOfXY is greater than LengthOfSR.");
+            if (Differene == 0)
+                Console.WriteLine("Both Lines are equal in Length.");
+            Console.ReadKey();
+        }
+
     }
 }

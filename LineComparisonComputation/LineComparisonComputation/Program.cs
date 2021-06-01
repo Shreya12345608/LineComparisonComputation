@@ -12,6 +12,7 @@ namespace LineComparisonComputation
             LineComparision LineCom = new LineComparision();
             LineCom.lengthOFLine();
             LineCom.functioncheckequallines();
+            LineCom.functionCompare();
             Console.ReadKey();
         }
     }
