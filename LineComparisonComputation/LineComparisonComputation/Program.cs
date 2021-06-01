@@ -11,7 +11,8 @@ namespace LineComparisonComputation
             Console.WriteLine("... Welcome to Line Comparison Computation ... ");
             LineComparision LineCom = new LineComparision();
             LineCom.lengthOFLine();
-             Console.ReadKey();
+            LineCom.functioncheckequallines();
+            Console.ReadKey();
         }
     }
 
